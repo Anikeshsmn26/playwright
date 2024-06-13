@@ -4,6 +4,9 @@ pipeline {
     tools {
         nodejs "nodejs-lts" // This should match the NodeJS installation name in Jenkins
     }
+     options {
+        cleanWs() // Clean the workspace before starting the build
+    }
 
     stages {
         stage('Checkout') {
