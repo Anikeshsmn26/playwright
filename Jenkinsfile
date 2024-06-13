@@ -6,6 +6,12 @@ pipeline {
     }
 
     stages {
+        stage('Cleanup Workspace') {
+            steps {
+                cleanWs() // Clean the workspace before starting the build
+            }
+        }
+    stages {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/Anikeshsmn26/playwright.git'
