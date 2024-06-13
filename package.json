@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "playwright",
   "devDependencies": {
     "@playwright/test": "^1.44.1",
     "@types/node": "^20.14.2"
